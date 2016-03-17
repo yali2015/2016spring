@@ -3,42 +3,55 @@
 <head>
 	<!--如果你的网页里面出现了中文，在头部没有这一句的话，将会导致中文乱码-->
 	<meta charset="utf-8" />
-	<title>我的任务一 零基础HTML编码</title>
+	<title>我的任务一零基础HTML编码</title>
 </head>
 <body>
-	<div class="firstSection">
+	<div id="firstSection">
 		<h1>网站一级标题</h1>
 	    <ul>
 		   <!--a标签要关闭-->
-		   <li><a href="">导航链接一</a></li>
-		   <li><a href="">导航链接二</a></li>
-		   <li><a href="">导航链接三</a></li>
+		   <li><a href="#" title="导航链接一">导航链接一</a></li>
+		   <li><a href="#" title="导航链接二">导航链接二</a></li>
+		   <li><a href="#" title="导航链接三">导航链接三</a></li>
 	    </ul>
 	</div>
-	<div class="firstArticle">
+	<div id="firstArticle">
 		<h2>文章一级标题</h2>
 	    <h3>文章二级标题</h3>
-	    <p>文章作者 文章发表时间</p>
+	    <p>文章作者&nbsp;文章发表时间</p>
 	    <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
 	    <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落</p>
 	    <br />
 	    <p>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有个链接</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落,<b>这里有个粗体字</b></p>
-	    <img src="../study/images/niuhonghong1.jpeg" />
+	    <img src="../study/images/niuhonghong1.jpeg" alt="下载不成功时的替换文本" />
 	    <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有个链接</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落</p>
 	</div>
-	<div class="secondArticle">
+	<div id="secondArticle">
 		<h2>另一篇文章的一级标题</h2>
 	    <h3>文章的二级标题</h3>
-	    <p>文章作者 文章发表时间</p>
+	    <p>文章作者&nbsp;文章发表时间</p>
 	    <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<br />这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有个链接</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落</p>
 	</div>
-	<div class="pictureSection">
+	<div id="pictureSection">
 		<img src="../study/images/niuhonghong2.jpeg" />
 	    <ul>
 		    <li>木瓜</li>
 		    <li>香蕉</li>
 		    <li>火龙果</li>
 	    </ul>
+        <h2>图片</h2>
+        <blockquote>
+            <p>好看的图片</p>
+            <img src="../study/images/niuhonghong1.jpeg" />
+             <p>好看的图片</p>
+            <img src="../study/images/niuhonghong1.jpeg" />
+             <p>好看的图片</p>
+            <img src="../study/images/niuhonghong1.jpeg" />
+             <p>好看的图片</p>
+            <img src="../study/images/niuhonghong1.jpeg" />
+             <p>好看的图片</p>
+            <img src="../study/images/niuhonghong1.jpeg" />
+        </blockquote>
 	    <div>
 		   <h2>牛哄哄系列表情包</h2>
 	       <ul style="list-style-type:none;">
@@ -51,20 +64,20 @@
 	<div class="lastArticle">
 		<h2>最后一篇文章一级标题</h2>
         <h3>文章二级标题</h3>
-        <p>文章作者 文章发表时间</p>
+        <p>文章作者&nbsp;文章发表时间</p>
         <ol>
     	    <li>排名1</li>
     	    <li>排名2</li>
     	    <li>排名3</li>
         </ol>
 	</div>
-	<div class="tableSection">
+	<div id="tableSection">
 		<p>下面是一个表格，给表格加了border="1",好让你看出是一个表格</p>
         <table border="1">
     	  <tr>
-    		  <td>姓名</td>
-    		  <td>年龄</td>
-    		  <td>班级</td>
+    		  <th>姓名</th>
+    		  <th>年龄</th>
+    		  <th>班级</th>
     	  </tr>
     	  <tr>
     		  <td>张三</td>
@@ -87,31 +100,47 @@
     	 </tr>
     </table>
 	</div>   
-    <div class="lastSection">
+    <div id="lastSection">
     	<div>
     		<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
     		<h2>侧栏注册窗口标题</h2>
     	</div>
     	<form>
-    	   <p>请输入邮箱地址：<input type="text" title="这是一个文本输入框" value="这是一个文本输入框"></p>
+    	   <label for="emailaddress">请输入邮箱地址：</label>
+           <input type="text"  value="这是一个文本输入框" id="emailaddress">
            <p>邮箱地址请按要求格式输入</p>
-           <p>请输入密码：<input type="password" title="这是一个文本输入框" ><span>请重复输入密码：<input type="password" title="这是一个文本输入框" ></span> </p>
+
+           <lable for="password">请输入密码：</lable>
+           <input type="password" title="这是一个文本输入框" id="password">
+           <label for="repassword">请重复输入密码：</label>
+           <input type="password" title="这是一个文本输入框" id="repassword">
            <p>密码请为6-16位英文数字</p>
-        </form>
-        <form>
-    	   <input type="radio" name="sex" checked>男 
-           <input type="radio" name="sex">女
+           
+           <label for="male">男</label>
+    	   <input type="radio" name="sex" checked="checked" id="male"/> 
+           <label for="female">女</label>
+           <input type="radio" name="sex" id="female"/>
+
            <select>
         	   <option value="BJ" selected="selected">北京</option>
         	   <option value="SH">上海</option>
         	   <option value="HZ">杭州</option>
            </select>
-           <span>爱好：</span>
-           <input type="checkbox" name="YD">运动
-           <input type="checkbox" name="YS">艺术
-           <input type="checkbox" name="KX">科学
-           <span>个人描述：<textarea title="这是一个多行输入框，请输入您的个人描述">这是一个多行输入框，请输入您的个人描述</textarea></span>
-           <input type="button" value="确认提交">
+
+           <lable >爱好：</lable>
+           <label for="YD">运动</label>
+           <input type="checkbox" name="YD" id="YD">
+
+           <label for="YS">艺术</label>
+           <input type="checkbox" name="YS" id="YD">
+
+           <label for="KX">科学</label>
+           <input type="checkbox" name="KX" id="KX">
+
+           <label for="des">个人描述：</label>
+           <textarea title="这是一个多行输入框，请输入您的个人描述" id="des">这是一个多行输入框，请输入您的个人描述</textarea>
+           
+           <input type="submit" value="确认提交">
         </form>
         <p>版权所有&copy;</p>
     </div>
