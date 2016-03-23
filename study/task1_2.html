@@ -3,8 +3,140 @@
 <head>
 	<!--如果你的网页里面出现了中文，在头部没有这一句的话，将会导致中文乱码-->
 	<meta charset="utf-8" />
-	<title>我的任务一零基础HTML编码</title>
-  <link rel="stylesheet" href="css/mystyle.css">
+	<title>我的任务二零基础HTML及CSS编码</title>
+  <style type="text/css">
+   body{
+    font-family: "Microsoft Yahei";
+    background: #ccc;
+    margin: 0px;/*清除导航栏间距*/
+  }
+  .firstSection{
+    text-align: right;
+    background: #000;
+    height: 60px;/*父元素高度确定的单行文本设置垂直居中*/
+    line-height: 60px;
+  }
+  .firstSection ul{
+    display: inline;
+  }
+  .firstSection li{
+    margin-right: 14px;
+    display: inline;
+  }
+  .firstSection a{
+    text-decoration: none;/*去掉链接的下划线*/
+    color:#fff;
+    font-weight:bold;
+    font-size: 12px;
+  }
+  .firstSection a:hover{/*设置鼠标滑过链接变色*/
+    color: #ccc;
+  }
+  .firstSection img{
+    float: left;
+    display: block;
+    padding-left: 30px;
+    margin: 2.5px auto;
+  }
+  .firstArticle,.secondArticle,.pictureSection,.lastArticle,.lastSection{
+       padding: 10px;
+       margin: 20px;
+       background: #fff;
+       border-right: 3px solid #a9a9a9;
+       border-bottom: 3px solid #a9a9a9;
+       border-left:1px solid #c0c0c0;
+       border-top:1px solid #c0c0c0;
+   }
+.firstArticle p{
+  font-size: 14px;
+  text-indent: 2em;
+}
+.firstArticle a{
+  color: blue;
+}
+.secondArticle p{
+  font-size: 14px;
+  text-indent: 2em;
+}
+.secondArticle a{
+  color: blue;
+}
+.secondArticle ul{
+ list-style: none;/*除去li前的点*/
+}
+.pictureSection div{
+   border: 1px solid #ccc;
+   padding: 10px;
+   margin: 10px;
+   display: inline-block;/*设置成内联块级元素*/
+   
+}
+.pictureSection img{
+  max-width: 100px;
+}
+
+th{
+  background-color: #000;
+  color:#fff;
+  text-align: left;
+}
+.table1{
+  border-collapse:collapse;/*合并表格边框*/
+  width: 100%;
+}
+.table1 td{
+   border: 1px solid #ccc;
+}
+.sum{
+  background: #ccc;
+}
+.right{
+  text-align: right;
+}
+.left{
+  text-align: left;
+}
+  .button{
+    border: none;
+    height: 40px;
+    width: 90%;
+    background: blue;
+    color: #fff;
+  }
+  .submit{
+    text-align: center;
+  }
+  textarea{
+    width: 600px;
+    height: 100px;
+  }
+  .notice{
+    color: #ccc;
+    font-size: 12px;
+  }
+  .footer{
+    background: #000;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+
+  }
+  .footer span{
+    color:#fff;
+    font-weight:bold;
+    font-size: 12px;
+  }
+  .lastSection h4{/*设置侧栏旁的横线*/
+    font-size: 1em;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+  }
+  .button {/*设置按钮的圆角*/
+    border-radius: 8px;
+    border: 0px;
+   }
+   
+  </style>
 </head>
 <body>
 	<div class="firstSection">
@@ -18,7 +150,6 @@
 	    </ul>
 	</div>
   <br />
-  <div id="all">
     <div class="firstArticle">
     <h2>文章一级标题</h2>
       <h3>文章二级标题</h3>
@@ -49,18 +180,22 @@
                <p>好看的图片</p>
                <img src="../study/images/niuhonghong2.jpeg" />
             </div>
+            <br />
             <div class="picture2">
                <p>好看的图片</p>
                <img src="../study/images/niuhonghong1.jpeg" />
             </div>
+            <br />
             <div class="picture3">
               <p>好看的图片</p>
               <img src="../study/images/niuhonghong1.jpeg" />
             </div>
+            <br />
               <div class="picture4">
               <p>好看的图片</p>
               <img src="../study/images/niuhonghong1.jpeg" />
             </div>
+            <br />
              <div class="picture5">
               <p>好看的图片</p>
               <img src="../study/images/niuhonghong1.jpeg" />
@@ -86,17 +221,17 @@
         <tr>
           <td>张三</td>
           <td>20</td>
-          <td>1班</td>
+          <td><a href="#" title="一个链接">1班</a></td>
         </tr>
         <tr>
           <td>李四</td>
           <td>21</td>
-          <td>2班</td>
+          <td><a href="#" title="一个链接">2班</a></td>
        </tr>
        <tr>
          <td>李红</td>
          <td>20</td>
-         <td>3班</td>
+         <td><a href="#" title="一个链接">3班</a></td>
        </tr>
        <tr class="sum">
          <td>人数合计</td>
@@ -112,30 +247,30 @@
             <td class="right">
               <label for="emailaddress">请输入邮箱地址&nbsp; </label>
             </td>
-            <td>
+            <td class="left">
               <input type="text"  value="这是一个文本输入框" id="emailaddress">
             </td>
           </tr>
           <tr>
             <td></td>
-            <td><p class="notice">邮箱地址请按要求格式输入</p></td>
+            <td class="left"><p class="notice">邮箱地址请按要求格式输入</p></td>
           </tr>
           <tr>
             <td class="right"><lable for="password">请输入密码&nbsp; </lable></td>
-            <td><input type="password" title="这是一个文本输入框" value="这是一个文本输入框" id="password"></td>
+            <td class="left"><input type="password" title="这是一个文本输入框" value="这是一个文本输入框" id="password"></td>
           </tr>
           <tr>
             <td class="right"><label for="repassword">请重复输入密码&nbsp; </label></td>
-            <td><input type="password" title="这是一个文本输入框" value="这是一个文本输入框" id="repassword"></td>
+            <td class="left"><input type="password" title="这是一个文本输入框" value="这是一个文本输入框" id="repassword"></td>
           </tr>
           <tr>
             <td></td>
-            <td><p class="notice">密码请为6-16位英文数字</p></td>
+            <td class="left"><p class="notice">密码请为6-16位英文数字</p></td>
           </tr>
           <tr>
             <td class="right"><lable>性别&nbsp;</lable></td>
             
-            <td>
+            <td class="left">
               
               <input type="radio" name="sex" checked="checked" id="male"/> 
               <label for="male">男</label>
@@ -147,7 +282,7 @@
           <tr>
             <td class="right"><lable>城市&nbsp; </lable></td>
               
-            <td>
+            <td class="left">
               <select>
              <option value="BJ" selected="selected">北京</option>
              <option value="SH">上海</option>
@@ -159,7 +294,7 @@
             <td class="right">
               <lable >爱好&nbsp;</lable>
             </td>
-            <td>
+            <td class="left">
               
               <input type="checkbox" name="YD" id="YD">
               <label for="YD">运动</label>
@@ -177,7 +312,7 @@
             <td class="right">
               <label for="des">个人描述&nbsp;</label>
             </td>
-            <td>
+            <td class="left">
               <textarea title="这是一个多行输入框，请输入您的个人描述" id="des">这是一个多行输入框，请输入您的个人描述</textarea>
             </td>
           </tr>
@@ -187,8 +322,6 @@
         </div>
         </form>
     </div>
-  </div>
-	
     <div class="footer">
        <span>版权所有&copy;</span>
     </div>
