@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>我的任务三：三栏式布局</title>
+	<style type="text/css">
+     body{
+     	padding: 20px;
+     	font-family: "微软雅黑";
+     	margin:0px auto;/*设置整个容器在浏览器中水平居中*/
+     }
+    .box1{
+    	padding: 20px;
+    	background: #eee;
+    	border: 1px solid #999;
+        overflow: auto;/*使用overflow:auto;属性设置容器根据内容自适应高度，如果不指定高度或不设置自适应高度，
+        容器将默认为1个字符高度，容器下方的布局元素设置属性将无效*/
+
+    }
+    .leftbox{
+    	float: left;
+    	padding: 20px;
+    	border: 1px solid #999;
+    	width: 200px;
+    	background: #fff;
+    	
+    }
+    .team_logo{
+    	float: left;
+    	display: inline-block;
+    	border: 1px solid #999;
+
+    }
+    .team_name{
+    	font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+    }
+    .centerbox{
+        padding: 20px;
+    	border: 1px solid #999;
+    	background: #fff;
+    	margin-left: 260px;
+    	margin-right: 140px;
+
+    }
+    .rightbox{/*不设置padding，因为图片设置了margin*/
+    	float: right;
+    	border: 1px solid #999;
+    	width: 120px;
+    	background: #fff;
+    	
+    }
+    .memberlogo{
+    	border: 1px solid #999;
+    	margin: 20px;
+    	display: block;
+    }
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="leftbox">
+			<img class="team_logo" src="../study/images/teamlogo.jpg">
+			<div class="team_name">穷宝宝队</div>
+		</div>
+		<div class="rightbox">
+			<img class="memberlogo" src="../study/images/member1.jpg">
+			<img class="memberlogo" src="../study/images/member2.jpg">
+			<img class="memberlogo" src="../study/images/member3.jpg">
+			<img class="memberlogo" src="../study/images/member4.jpg">
+		</div>
+		<div class="centerbox">
+			<h2>穷宝宝队</h2>
+			<h3>团队介绍</h3>
+			<p>我们是来自北京邮电大学研一的同学，参加这次百度前端技术学院，想通过参加这次技术培训，多学习些前端的知识，其他队友都是刚开始学习前端，正好可以 通过这次0基础地学习，系统地学习前端知识~~</p>
+			<h3>成员介绍</h3>
+			<p>我们组只有3名成员，都是刚开始接触前端，希望在这次学习中能踏踏实实，系统的学习前端知识。具体成员信息有时间再更新~~</p>
+		</div>
+		
+	</div>
+</body>
+</html>
